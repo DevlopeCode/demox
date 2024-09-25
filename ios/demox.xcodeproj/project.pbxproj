@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* demoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* demoxTests.m */; };
+		03B450F2E4A04D5985EAE355 /* Inter_18pt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868A0294439941F6A365DD0E /* Inter_18pt-Regular.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-demox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-demox.a */; };
+		0F3A88BF48C447989AFE9853 /* Inter_18pt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9F45D7FFFE64559A2E7726E /* Inter_18pt-SemiBold.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		33D53D109D71457CA1A1ABC6 /* Inter_18pt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7E9ABA83A634DD3ABE973DD /* Inter_18pt-Thin.ttf */; };
 		3A07999F7055EAF61FC789E9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = FDBB18DCDBE745CDF8739EC0 /* PrivacyInfo.xcprivacy */; };
+		49B22FEB44604A648390B2F9 /* Inter_18pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBF6127DB8C94F768BBA4303 /* Inter_18pt-Medium.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-demox-demoxTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-demox-demoxTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		AA7A2BFF9579436EAF4D2CCC /* Inter_18pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C4F52EC962246ECA7553837 /* Inter_18pt-Bold.ttf */; };
+		FCF70016F57A4DA8BE03705D /* Inter_18pt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7ABD0B8E45C40F983FB2196 /* Inter_18pt-ExtraBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +46,17 @@
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = demox/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-demox-demoxTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-demox-demoxTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-demox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demox.debug.xcconfig"; path = "Target Support Files/Pods-demox/Pods-demox.debug.xcconfig"; sourceTree = "<group>"; };
+		4C4F52EC962246ECA7553837 /* Inter_18pt-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter_18pt-Bold.ttf"; path = "../asset/fonts/Inter_18pt-Bold.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-demox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demox.release.xcconfig"; path = "Target Support Files/Pods-demox/Pods-demox.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-demox-demoxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demox-demoxTests.debug.xcconfig"; path = "Target Support Files/Pods-demox-demoxTests/Pods-demox-demoxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-demox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-demox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = demox/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		868A0294439941F6A365DD0E /* Inter_18pt-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter_18pt-Regular.ttf"; path = "../asset/fonts/Inter_18pt-Regular.ttf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-demox-demoxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demox-demoxTests.release.xcconfig"; path = "Target Support Files/Pods-demox-demoxTests/Pods-demox-demoxTests.release.xcconfig"; sourceTree = "<group>"; };
+		C7ABD0B8E45C40F983FB2196 /* Inter_18pt-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter_18pt-ExtraBold.ttf"; path = "../asset/fonts/Inter_18pt-ExtraBold.ttf"; sourceTree = "<group>"; };
+		C9F45D7FFFE64559A2E7726E /* Inter_18pt-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter_18pt-SemiBold.ttf"; path = "../asset/fonts/Inter_18pt-SemiBold.ttf"; sourceTree = "<group>"; };
+		D7E9ABA83A634DD3ABE973DD /* Inter_18pt-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter_18pt-Thin.ttf"; path = "../asset/fonts/Inter_18pt-Thin.ttf"; sourceTree = "<group>"; };
+		DBF6127DB8C94F768BBA4303 /* Inter_18pt-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter_18pt-Medium.ttf"; path = "../asset/fonts/Inter_18pt-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FDBB18DCDBE745CDF8739EC0 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = demox/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +123,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		402A39CD2B5747C3901112D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C4F52EC962246ECA7553837 /* Inter_18pt-Bold.ttf */,
+				C7ABD0B8E45C40F983FB2196 /* Inter_18pt-ExtraBold.ttf */,
+				DBF6127DB8C94F768BBA4303 /* Inter_18pt-Medium.ttf */,
+				868A0294439941F6A365DD0E /* Inter_18pt-Regular.ttf */,
+				C9F45D7FFFE64559A2E7726E /* Inter_18pt-SemiBold.ttf */,
+				D7E9ABA83A634DD3ABE973DD /* Inter_18pt-Thin.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +153,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				402A39CD2B5747C3901112D5 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -249,6 +276,12 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3A07999F7055EAF61FC789E9 /* PrivacyInfo.xcprivacy in Resources */,
+				AA7A2BFF9579436EAF4D2CCC /* Inter_18pt-Bold.ttf in Resources */,
+				FCF70016F57A4DA8BE03705D /* Inter_18pt-ExtraBold.ttf in Resources */,
+				49B22FEB44604A648390B2F9 /* Inter_18pt-Medium.ttf in Resources */,
+				03B450F2E4A04D5985EAE355 /* Inter_18pt-Regular.ttf in Resources */,
+				0F3A88BF48C447989AFE9853 /* Inter_18pt-SemiBold.ttf in Resources */,
+				33D53D109D71457CA1A1ABC6 /* Inter_18pt-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

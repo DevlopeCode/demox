@@ -1,118 +1,91 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
-import React from 'react';
-import type {PropsWithChildren} from 'react';
+/* eslint-disable react-native/no-inline-styles */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
-  SafeAreaView,
+  Image,
   ScrollView,
   StatusBar,
   StyleSheet,
   Text,
-  useColorScheme,
   View,
 } from 'react-native';
+import React, {useRef} from 'react';
+import {ms, vs} from 'react-native-size-matters';
+import {Colors} from './src/theme/colors';
+import Swipebtn from './src/componet/swipebtn';
+import 'react-native-gesture-handler';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import {Header} from './src/componet/header';
+import {DistanceCard} from './src/componet/distancecard';
+import {AboutCard} from './src/componet/aboutcard';
+import {StatusCard} from './src/componet/statuscard';
+import {Startingfrom} from './src/componet/startingfrom';
+import {PlayFriend} from './src/componet/playfriend';
+import {StartingCard} from './src/componet/startting';
+import ReviewCard from './src/componet/ratingcard';
+import LeaderboardCard from './src/componet/leaderboard';
+import ReviewsAndRatings from './src/componet/rating';
+import RatingsReviewsModal from './src/componet/modal';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
-
-function Section({children, title}: SectionProps): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+const Ledarboard = () => {
   return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
+    <View
+      style={{
+        height: vs(210),
+        backgroundColor: Colors.white,
+        borderRadius: 20,
+        padding: ms(20),
+      }}>
+      <View>
+        <Text style={{fontWeight: 'bold', fontSize: ms(16)}}>Leaderboard</Text>
+        <Text
+          style={{
+            fontWeight: '400',
+            fontSize: ms(12),
+            color: Colors.gray60,
+            lineHeight: ms(16.8),
+            marginTop: ms(20),
+          }}>
+          Greenview Golf Club is a premier 18-hole golf course designed to offer
+          a challenging and enjoyable experience for golfers of all skill
+          levels. Nestled in the rolling hills of Golf City, the course features
+          stunning views, well-maintained greens, and a variety of natural
+          hazards.
+        </Text>
+      </View>
     </View>
   );
-}
+};
 
-function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+const App = () => {
+  const modalRef = useRef<any>(null);
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+  const openModal = () => {
+    modalRef.current?.show();
   };
-
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
+    <GestureHandlerRootView>
+      <ScrollView style={{flex: 1, backgroundColor: Colors.whitebg}}>
+        <StatusBar
+          translucent={true}
+          showHideTransition={'none'}
+          barStyle={'light-content'}
+        />
         <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
+        <DistanceCard />
+        <StartingCard />
+        <Startingfrom />
+        <PlayFriend />
+        <StatusCard />
+        <AboutCard />
+        <LeaderboardCard />
+        <ReviewsAndRatings />
+        <Swipebtn onPress={openModal} />
       </ScrollView>
-    </SafeAreaView>
+      <RatingsReviewsModal ref={modalRef} />
+    </GestureHandlerRootView>
   );
-}
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
+};
 
 export default App;
+
+const styles = StyleSheet.create({});
